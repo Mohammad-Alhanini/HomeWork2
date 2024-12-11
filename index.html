@@ -8,32 +8,21 @@
 </head>
 
 <body>
+    <h3>Q1:</h3>
     <list>
         <li><a href="https://www.google.com/">External Link</a></li><br>
         <li><a href="AboutUs.html">About us</a></li><br>
         <li><a href="mailto:mohammad1alhanini@gmail.com">Email</a></li><br>
     </list>
 
+    <h3>Q2:</h3>
     <table border="1" style="box-sizing: border-box; width: 700px; height: 300px; text-align: center;">
-        <tr  >
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
+        <tr>
+            <td colspan="6">.</td>
         </tr>
 
         <tr>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-        </tr>
-        <tr>
-            <td>.</td>
+            <td rowspan="4">.</td>
             <td>.</td>
             <td>.</td>
             <td>.</td>
@@ -41,7 +30,20 @@
             <td>.</td>
         </tr>
         <tr>
+
             <td>.</td>
+            <td colspan="3" rowspan="2">.</td>
+
+            <td>.</td>
+        </tr>
+        <tr>
+
+            <td>.</td>
+
+            <td>.</td>
+        </tr>
+        <tr>
+
             <td>.</td>
             <td>.</td>
             <td>.</td>
@@ -49,22 +51,47 @@
             <td>.</td>
         </tr>
         <tr>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-        </tr>
-        <tr>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
+            <td colspan="6">.</td>
         </tr>
     </table>
+
+    <h3>Q3:</h3>
+    <form action="/submit-form" method="post">
+        <fieldset style="width: 600px;">
+            <legend>Personal Details</legend>
+
+            <label for="first-name">First name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <br><br>
+
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="30"></textarea>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+
 </body>
 
 </html>
